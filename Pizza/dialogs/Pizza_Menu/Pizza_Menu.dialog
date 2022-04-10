@@ -1,0 +1,51 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "4l7ZNE",
+    "name": "Pizza_Menu",
+    "comment": "A dialog to get pizza menus"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "wDkmJQ"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "yfYEk1"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_yfYEk1()}",
+          "invalidPrompt": "${TextInput_InvalidPrompt_yfYEk1()}",
+          "prompt": "${TextInput_Prompt_yfYEk1()}",
+          "property": "user.pincode",
+          "outputFormat": "=trim(this.value)",
+          "validations": [
+            "length(this.value) == 6"
+          ],
+          "defaultValue": "221199"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "YsyOMQ"
+          },
+          "activity": "${SendActivity_YsyOMQ()}"
+        }
+      ]
+    }
+  ],
+  "generator": "Pizza_Menu.lg",
+  "recognizer": "Pizza_Menu.lu.qna",
+  "id": "Pizza_Menu"
+}

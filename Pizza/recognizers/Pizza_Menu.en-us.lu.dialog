@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.LuisRecognizer",
+  "id": "LUIS_Pizza_Menu",
+  "applicationId": "=settings.luis.Pizza_Menu_en_us_lu.appId",
+  "version": "=settings.luis.Pizza_Menu_en_us_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey"
+}

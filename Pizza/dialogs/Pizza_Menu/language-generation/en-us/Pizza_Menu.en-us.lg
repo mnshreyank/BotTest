@@ -1,0 +1,33 @@
+[import](common.lg)
+
+# SendActivity_YsyOMQ()
+[Activity
+    Text = ${SendActivity_YsyOMQ_text()}
+]
+
+# SendActivity_YsyOMQ_text()
+- ```Today's Special 
+   1) Farmhouse
+   2) Veg loaded
+   3) Paneer Makhani```
+# TextInput_Prompt_yfYEk1()
+[Activity
+    Text = ${TextInput_Prompt_yfYEk1_text()}
+]
+
+# TextInput_Prompt_yfYEk1_text()
+- Your area pincode??
+# TextInput_UnrecognizedPrompt_yfYEk1()
+[Activity
+    Text = ${TextInput_UnrecognizedPrompt_yfYEk1_text()}
+]
+
+# TextInput_UnrecognizedPrompt_yfYEk1_text()
+- Sorry, I dont understand ${this.value}. Please specify a 6 digit pincode. Ex: (221188)
+# TextInput_InvalidPrompt_yfYEk1()
+[Activity
+    Text = ${TextInput_InvalidPrompt_yfYEk1_text()}
+]
+
+# TextInput_InvalidPrompt_yfYEk1_text()
+- Sorry, I dont understand ${this.value}. Please specify a 6 digit pincode. Ex: (221188)

@@ -1,0 +1,14 @@
+{
+  "name": "Pizza",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node index.js"
+  },
+  "dependencies": {
+    "@microsoft/bot-components-helpandcancel": "^1.2.1",
+    "botbuilder-ai-luis": "4.15.0-preview",
+    "botbuilder-ai-qna": "4.15.0-preview",
+    "botbuilder-dialogs-adaptive-runtime-integration-express": "4.15.0-preview",
+    "cross-env": "latest"
+  }
+}
